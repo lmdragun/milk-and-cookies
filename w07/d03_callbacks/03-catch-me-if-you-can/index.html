@@ -1,6 +1,26 @@
 <!doctype html>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+    $( document ).ready(function() {
+      console.log( "hi!" );
+      $( '.click-zone' ).append( '<div class="box"></div>' );
+      $('.box').css("backgroundColor", "blue").css("width", "100px").css("height", "100px").css("position", "absolute");
+      function generate() {
+        var topNumber = Math.floor(Math.random() * 550);
+        var leftNumber = Math.floor(Math.random() * 550);
+        $('.box').css("top", topNumber).css("left", leftNumber);
+          }
+          setInterval(generate, 1000);
+      var box = document.querySelector(".box");
+      box.addEventListener("click", function(){
+            alert("You win!");
+            
+        })
+      });
+
+    </script>
     <style>
       .click-zone{
         height: 600px;
@@ -12,6 +32,7 @@
     </style>
   </head>
  <body>
+
    <div class='click-zone'>
    </div>
  </body>
