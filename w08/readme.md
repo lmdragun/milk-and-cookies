@@ -13,3 +13,24 @@
 - Explain how separation of concerns applies to Javascript
 - Organize code into model and view folders, with a main app.js 'controller' file
 - Name the four patterns of function invocation, and the context assumed with each.
+
+## Rails APIs
+
+- Use `render json: ` to render a JSON response from a rails controller
+- Use `respond_to` to render different formats based on the incoming request
+- Build a rails app that supports CRUD actions using a JSON interface
+
+## AJAX
+
+- Explain the difference between synchronous and asynchronous program execution
+- Explain why synchronous program execution is not conducive to the front-end.
+- Use jQuery $.ajax() method to make asynchronous GET requests for data.
+- Use jQuery's 'promise-like' methods to handle AJAX responses asynchronously.
+- Contrast the old ('success') style of handling async with the new style.
+- Render new HTML content using data loaded from an Ajax request.
+- Perform POST, PUT, and DELETE requests to an API to modify data.
+
+## Rails API + ERB
+
+- Load from and post data to external servers, incorporating it in a page's content, without requiring a page refresh
+- Distinguish between when best to use AJAX versus server-side HTTP
