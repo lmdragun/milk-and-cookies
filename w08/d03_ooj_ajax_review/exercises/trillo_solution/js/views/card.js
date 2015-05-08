@@ -1,10 +1,12 @@
 var CardView = function(card){
   this.card = card
+  //the following lines make the new card by choosing/creating the elements within the HTML that will be affected by the javascript, then append the new information (ie: description)
   this.container = document.createElement("div")
   this.container.className = "card"
   this.description = document.createElement("p")
   this.description.innerHTML = card.description
   this.container.appendChild(this.description)
+  //the following controls which column the cards will be in, based on input of a checked/unchecked box, by creating an input checkbox, and adding it to the card, then adding an event listener
   var input = document.createElement("input")
   input.type = "checkbox"
   input.checked = card.completed
@@ -19,6 +21,7 @@ var CardView = function(card){
 }
 
 CardView.prototype = {
+  //this edits already created cards by removing the text inside and replacing it with the new input
   editCard: function(event){
     var input = document.createElement("input")
     input.value = this.description.innerHTML

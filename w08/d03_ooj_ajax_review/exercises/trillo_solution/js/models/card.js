@@ -6,6 +6,7 @@ var Card = function(id, description, completed){
 
 Card.prototype = {
   save: function(){
+    //this communicates with the Rails app the same way it would with an API, by 'posting' it to the app, it's saved in the database
     $.ajax({
       type: 'POST',
       data: { card: {description: this.description, completed: this.completed}},
@@ -19,6 +20,7 @@ Card.prototype = {
     })
   },
   update: function(data){
+    //this updates the cards in the database using the specific card ID as params
     $.ajax({
       type: 'PUT',
       data: {card: data},

@@ -4,6 +4,7 @@ var Trillo = function(){
 }
 
 Trillo.prototype = {
+  //this gets the cards out of the database, loads them in the model, and renders them in the view using those functions
   fetchCards: function(callback) {
     $.ajax({
       type: 'GET',

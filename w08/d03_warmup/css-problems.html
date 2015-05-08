@@ -2,6 +2,97 @@
 <html>
   <head>
     <title>Huffington Post Code Challenge</title>
+    <style>
+
+      .code div {
+        color: white;
+        width: 100px;
+        height: 100px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        display: inline-block;
+        padding: 0;
+        box-shadow: inset 1px 1px 60px 0px #333;
+        text-align: center;
+        font-family: "Helvetica";
+        font-size: 14px;
+        letter-spacing: 1px;
+        vertical-align: bottom;
+        line-height:100px;
+      }
+      .challenge1 .code div {
+
+      }
+      .challenge1 .code div:first-child {
+        background-color: #666;
+      }
+      .challenge1 .code div:nth-child(2) {
+        background-color: purple;
+      }
+      .challenge1 .code div:nth-child(3) {
+        background-color:green;
+      }
+
+      .challenge2 .code div:first-child, .challenge2 .code div:nth-child(4) {
+        background-color: #666;
+      }
+      .challenge2 .code div:nth-child(2) {
+        background-color: #666;
+        margin-left:140px;
+      }
+      .challenge2 .code div:nth-child(2), .challenge2 .code div:nth-child(5) {
+        background-color: purple;
+      }
+
+      .challenge2 .code div:nth-child(4) {
+        float: left;
+      }
+
+      .challenge2 .code div:nth-child(3) {
+        margin-left: 140px;
+      }
+
+      .challenge2 .code div:nth-child(3), .challenge2 .code div:nth-child(6) {
+        background-color: green;
+        margin-left:200px;
+      }
+
+      .challenge2 .code div:nth-child(5) {
+        margin-left: -240px;
+      }
+
+      .challenge3 .code div:first-child {
+        background-color: #666;
+      }
+
+      .challenge3 .code div:first-child:hover {
+        color: red;
+      }
+      .challenge3 .code div:nth-child(2) {
+        background-color: #666;
+      }
+      .challenge3 .code div:nth-child(3), .challenge3 .code div:nth-child(4) {
+        background-color: purple;
+      }
+
+      .challenge3 .code div:nth-child(3) {
+        margin-left: 140px;
+      }
+      .challenge3 .code div:nth-child(3):hover {
+        color:red;
+      }
+
+      .challenge3 .code div:nth-child(5), .challenge3 .code div:nth-child(6) {
+        background-color: green;
+      }
+
+      .challenge3 .code div:nth-child(5) {
+        margin-left: 140px;
+      }
+
+
+    </style>
   </head>
   <body>
     <div class="challenge1">
@@ -11,7 +102,7 @@
         <img src="img/challenge1.png"  />
       </div>
       <div class="code">
-	<div>I am first</div><div>I am in the middle</div><div>I am last</div>
+	<div class="circle">I am first</div><div>I am in the middle</div><div>I am last</div>
       </div>
   </div>
   <hr>
