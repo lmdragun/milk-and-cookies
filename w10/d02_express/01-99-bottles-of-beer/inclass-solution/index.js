@@ -1,18 +1,27 @@
 var express = require("express")
 var app = express()
+var routes = require("./routes")
 
-app.get("/", function( req, res ){
-  res.send("99 Bottles of Beer on the wall. <a href='/98'>Take one down</a>")
-})
+app.set("view engine", "hbs")
+app.use(express.static(__dirname + "/public"))
 
-app.get("/:numBottles", function( req, res ){
-  var next = req.params.numBottles - 1
-  if( next == -1 ){
-    res.send("<a href='/'>Start Over</a>")
-  } else {
-    res.send(req.params.numBottles+" Bottles of Beer on the wall. <a href='/"+next+"'>Take one down</a>")
-  }
-})
+// app.get("/", function( req, res ){
+//   res.render('index', {
+//     numBottles: 99,
+//     next: 98
+//   })
+// });
+
+app.get("/:numBottles?", routes.index)
+
+// app.get("/:numBottles?", function( req, res ){
+  // var numBottles = req.params.numBottles || 99
+  // var next = numBottles - 1
+  // res.render('index', {
+  //   numBottles: parseInt(numBottles),
+  //   next: next
+  // })
+// })
 
 app.listen(3000, function(){
   console.log("listening on 3000")
