@@ -8,6 +8,12 @@ app.use(express.static(__dirname + "/public"))
 
 app.get("/", function( req, res ){
  //display a generic greeting and a randomly chosen compliment. Th    e background color of the app should be randomized as well
+ var bgcolor = colors[Math.round(Math.random()*(colors.length-1))]
+ var randomCompliment = compliments[Math.round(Math.random()*(compliments.length-1))]
+ res.render('index',{
+   bgcolor: bgcolor,
+   randomCompliment: randomCompliment
+ })
 })
 
 app.listen(3000, function(){
