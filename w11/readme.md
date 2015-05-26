@@ -1,16 +1,48 @@
 # Week 11
 
+Please sign up for either the front-end or the back-end track here:
+
+http://doodle.com/zzin7waihin24cbk
+
+Note that both tracks will include the same Computer Science class.
+
 ## Learning Objectives
 
 ### Computer Science
 
+- Explain what Big-O time-complexity measures
+- Explain what an algorithm is
+- Analyze an algorithm for its time-complexity
+- Explain what a divide and conquer algorithm is
+- Describe a few basic data structures
+- Explain the time-complexity of search for a particular data structure
+
 ## Front End Track
 
-### CSS Animations
+### Digital Product Design
+
+- Apply basic principles of design to a project
+- Embed fonts into a website
+- Incorporate fonts from a CDN
+- Distinguish between appropriate uses of different image types
+- Use pure CSS transitions and animations in place of Javascript
+- Explain what "keyframes", "easing", "tweening" are and how they relate to CSS
 
 ### jQuery Plugins
 
+- Research and utilize a published jQuery Plugin
+- Describe basic anatomy of a jQuery Plugin
+- Create your own jQuery Plugin
+
 ### Testing JavaScript with Jasmine
+
+- Setup Jasmine via CDN
+- Setup Jasmine for a Node Project
+- Setup Jasmine for a Rails project
+- Compare/Contrast Jasmine & RSpec
+- Explain how `this` is used within Jasmine
+- Explain when to use Jasmine Spies
+- Create a custom matcher
 
 ## Back End Track
 
@@ -27,4 +59,14 @@
 
 ### Rails Caching and Performance
 
+* Explain what server-side caching is, and why we might use it.
+* Explain what cache invalidation is, and common techniques for performing it.
+* Use Rails' cache helper to implement server-side caching in a rails app.
+* List and explain the challenges / pitfalls of server-side caching.
+
 ### Deployment without Heroku
+
+* Launch a server ('droplet') on Digital Ocean
+* Explain the difference between a web and applicaiton server, and how they work
+  together
+* Use linux commands to install ruby, rubygems, nginx, and passenger
