@@ -14,7 +14,9 @@
 **Post in slack:**
 * What is caching?
 * Where have we seen caching before?
+Google jquery browser cashing
 * What were the benefits?
+Faster load times
 * What process had to be in place to handle changes to cached data?
 * How did that caching work?
 * What did we call the thing that made file names unique?

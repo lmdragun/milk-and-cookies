@@ -1,0 +1,27 @@
+Wake up
+press snooze
+sit up
+check phone
+	check tumblr
+go to the bathroom
+if !late?
+	stretch
+brush teeth
+dirty = shower.timestamp.day > 1
+	if dirty?
+		shower
+	else
+		wash face
+moisturize
+put on sunscreen
+eat something
+drink water
+if food?
+	prepare lunch
+choose clothing (temperature variable)
+if extra_time?
+	do tumblr
+dress
+put on shoes
+pick up bags
+leave apartment
