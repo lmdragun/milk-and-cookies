@@ -1,4 +1,4 @@
-<% cache comment do %>
+<% cache(comment) do %>
   <% sleep 0.01 %>
   <%= div_for comment do %>
     <div class="body">
@@ -7,5 +7,5 @@
     <div class="info">
       by <%= comment.author_name %> <%= time_ago_in_words(comment.created_at) %> ago
     </div>
-  <% end %>
+  <% end  %>
 <% end %>
