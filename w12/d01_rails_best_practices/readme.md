@@ -105,7 +105,6 @@ class PostController < ApplicationController
 end
 ```
 
-
 ## ActiveRecord scopes
 
 We often need to perform the same query on an AR Model in multiple places in
